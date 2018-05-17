@@ -1,3 +1,11 @@
 <resources>
     <string name="app_name">MyApplication</string>
+    <string name="mydrawboard">自定义画板</string>
+    <string name="tallyBook">记账本</string>
+    <string name="intellingentChat">智能聊天</string>
+    <string name="title_activity_basic">BasicActivity</string>
+    <string name="selectionFunction">功能选择页面</string>
+    <string name="tuling">图灵机器人</string>
+    <string name="startSend">发送</string>
+    <string name="checkWeather">查询天气</string>
 </resources>

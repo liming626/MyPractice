@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/color_ffffff"
+    tools:context="com.example.administrator.myapplication.ChatActivity">
+    <TextView
+        android:gravity="center"
+        android:textSize="@dimen/text_25"
+        android:textColor="@color/color_000"
+        android:background="@color/color_f5f5f5"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="@string/checkWeather"
+        />
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recycler"
+        android:background="@color/color_ffffff"
+        android:layout_width="match_parent"
+        android:layout_weight="1"
+        android:layout_height="0dp">
+
+    </android.support.v7.widget.RecyclerView>
+    <LinearLayout
+        android:layout_gravity="bottom"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+        <TextView
+            android:gravity="center_vertical"
+            android:textSize="18sp"
+            android:text="请输入城市名称："
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent" />
+        <EditText
+            android:id="@+id/edtInput"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="5"
+            />
+        <Button
+            android:id="@+id/btnSend"
+            android:text="@string/startSend"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            />
+    </LinearLayout>
+</LinearLayout>
