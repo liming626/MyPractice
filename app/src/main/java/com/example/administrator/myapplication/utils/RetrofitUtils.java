@@ -47,9 +47,6 @@ public class RetrofitUtils {
         @Override
         public okhttp3.Response intercept(Chain chain) throws IOException {
             String token = "";
-//            if (!StringUtils.isEmpty(App.TOKEN)) {
-//                token = App.TOKEN;
-//            }
             Request request = chain.request();
             Request.Builder requestBuilder = request.newBuilder();
             request = requestBuilder

@@ -89,6 +89,8 @@ public class ChatActivity extends AppCompatActivity {
                         int error_code = body.getError_code();
                         if(error_code==0){
                             ChatReceiveInfo.DataBean data = body.getData();
+                            String s = gson.toJson(body.getData());
+                            Log.d("data","data="+s);
                             ChatMessageInfo info = new ChatMessageInfo();
                             info.setTime(MyDateUtils.getDateStr());
                             List<ChatReceiveInfo.DataBean.NowBean> now = data.getNow();
@@ -110,6 +112,14 @@ public class ChatActivity extends AppCompatActivity {
                             ChatMessageInfo info = new ChatMessageInfo();
                             info.setTime(MyDateUtils.getDateStr());
                             info.setMessage("暂无该城市");
+                            info.setType(2);
+                            list.add(info);
+                            adapter.notifyDataSetChanged();
+                            recycler.scrollToPosition(adapter.getItemCount()-1);
+                        }else if(error_code==114){
+                            ChatMessageInfo info = new ChatMessageInfo();
+                            info.setTime(MyDateUtils.getDateStr());
+                            info.setMessage(body.getReason());
                             info.setType(2);
                             list.add(info);
                             adapter.notifyDataSetChanged();
