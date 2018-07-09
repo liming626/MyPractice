@@ -5,7 +5,7 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:background="@color/color_ffffff"
-    tools:context="com.example.administrator.myapplication.ChatActivity">
+    tools:context="com.example.administrator.myapplication.activity.ChatActivity">
     <TextView
         android:gravity="center"
         android:textSize="@dimen/text_25"

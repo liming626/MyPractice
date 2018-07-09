@@ -4,7 +4,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context="com.example.administrator.myapplication.MainActivity">
+    tools:context="com.example.administrator.myapplication.activity.MainActivity">
     <TextView
         android:gravity="center"
         android:textSize="@dimen/text_25"
@@ -37,6 +37,12 @@
             <Button
                 android:id="@+id/btnTallyBook"
                 android:text="@string/tallyBook"
+                android:layout_width="match_parent"
+                android:layout_height="50dp" />
+
+            <Button
+                android:id="@+id/btnGlide"
+                android:text="@string/glidePhoto"
                 android:layout_width="match_parent"
                 android:layout_height="50dp" />
 

@@ -1,4 +1,4 @@
-package com.example.administrator.myapplication;
+package com.example.administrator.myapplication.activity;
 
 import android.content.Context;
 import android.os.Bundle;
@@ -12,6 +12,7 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
 
+import com.example.administrator.myapplication.R;
 import com.example.administrator.myapplication.adapter.ChatRecyclerAdapter;
 import com.example.administrator.myapplication.bean.ChatMessageInfo;
 import com.example.administrator.myapplication.bean.ChatReceiveInfo;
